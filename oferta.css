@@ -1,0 +1,256 @@
+
+.TITULO_OFERTA {
+  margin: 20px; /* Ajusta el margen arriba, abajo, izquierda y derecha */
+  padding: 20px; /* Ajusta el relleno interior arriba, abajo, izquierda y derecha */
+  background-color: #f8f8f8; /* Fondo para destacar la sección */
+  border-radius: 8px; /* Bordes redondeados para un estilo más suave */
+  text-align: center; /* Centrar el texto */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+.TITULO_OFERTA h1 {
+  margin-bottom: 10px; /* Espacio debajo del título */
+  font-size: 2em; /* Tamaño del título */
+  color: #333; /* Color del texto del título */
+}
+
+.TITULO_OFERTA p a {
+  font-size: 1.2em; /* Tamaño del texto del enlace */
+  color: #007bff; /* Color del enlace */
+  text-decoration: none; /* Sin subrayado en el enlace */
+  transition: color 0.3s ease; /* Efecto de transición en el color del enlace */
+}
+
+.TITULO_OFERTA p a:hover {
+  color: #0056b3; /* Color del enlace al pasar el mouse */
+}
+
+/* Media query para dispositivos móviles */
+
+@media (max-width: 768px) {
+  .TITULO_OFERTA {
+    margin: 10px; /* Reducir el margen para pantallas más pequeñas */
+    padding: 15px; /* Reducir el relleno interior */
+  }
+
+  .TITULO_OFERTA h1 {
+    font-size: 1.2em; /* Reducir tamaño del título */
+  }
+
+  .TITULO_OFERTA p a {
+    font-size: 0.8em; /* Reducir tamaño del texto del enlace */
+  }
+}
+
+
+.oferta {
+  display: flex; /* Utilizar Flexbox */
+  flex-wrap: wrap; /* Permitir que los elementos se envuelvan en filas */
+  justify-content: center;
+}
+
+.oferta > div {
+  flex-direction: row; /* Flex: crecimiento (1), contracción (0), base (300px) */
+  margin: 10px; /* Margen entre elementos */
+  background-color: #ffffff00; /* Color de fondo para fines de demostración */
+  padding: 0px; /* Espaciado interno */
+  text-align: center; /* Alinear contenido al centro */
+  margin: 50px 20px 50px 20px;
+  gap: 50px;
+}
+
+.plan-card:hover {
+  transform: scale(1.1); /* Aumentar el tamaño al pasar el cursor */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 8px 12px rgba(6, 21, 235, 0.968); /* Cambiar la sombra al pasar el cursor */
+}
+
+
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 768px) {
+  .oferta {
+    flex-direction: column; /* Apilar elementos en columna */
+    align-items: center; /* Alinear elementos al centro */
+  }
+
+  .oferta > div {
+    flex-basis: 100%; /* Los elementos ocupan todo el ancho */
+    margin: 10px 0; /* Reducir margen entre elementos */
+    margin:15px 20px 15px 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.plan-card {
+    background: #fbfafa;
+    width: 18rem;
+    height: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5px;
+    padding-bottom: 0.5px;
+    border-radius: 10px;
+    border-bottom: 8px solid #000446;
+    box-shadow: 0 6px 30px rgba(23, 7, 106, 0.445);
+    font-family: "Poppins", sans-serif;
+    
+  }
+  
+  .plan-card h2 {
+    margin-top: 15PX;
+    margin-bottom: 15px;
+    font-size: 27px;
+    font-weight: 600;
+  }
+  
+  .plan-card h2 span {
+    display: block;
+    margin-top: 4px;
+    color: #4d4d4d;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  
+  .etiquet-price {
+    align-items: center;
+    position: relative;
+    background: #fdbd4a;
+    width: 17.46rem;
+    margin-left: -0.65rem;
+    padding: .2rem 1.2rem;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .etiquet-price p {
+    margin: 0;
+    padding-top: .4rem;
+    display: flex;
+    font-size: 1.9rem;
+    font-weight: 500;
+    
+  }
+  
+  .etiquet-price p:before {
+    content: "S/.";
+    margin-right: 5px;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  
+  .etiquet-price p:after {
+    content: ".99";
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  
+  
+  .etiquet-price div {
+    position: absolute;
+    bottom: -23px;
+    right: 0px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid #c58102;
+    border-bottom: 10px solid transparent;
+    border-right: 13px solid transparent;
+    z-index: -6;
+  }
+  
+  .benefits-list {
+    margin-top: 16px;
+  }
+  
+  .benefits-list ul {
+    padding: 0;
+    font-size: 14px;
+  }
+  
+  .benefits-list ol li {
+    color: #4d4d4d;
+    list-style: none;
+    margin-bottom: .2rem;
+    display: flex;
+    align-items: left;
+    gap: 0.5rem;
+  }
+  
+  
+  .button-get-plan a {
+    display: flex; /* Utilizar Flexbox para el contenedor */
+    flex-wrap: wrap; /* No permitir que los elementos se envuelvan a la siguiente línea */
+    justify-content: center; /* Centrar horizontalmente los elementos dentro del contenedor */
+    align-items: center; /* Centrar verticalmente los elementos dentro del contenedor */
+    background: #0022ff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    padding: 10px 15px; /* Espaciado interno del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado en el texto */
+    font-size: .8rem; /* Tamaño de la fuente */
+    letter-spacing: .05rem; /* Espaciado entre letras */
+    font-weight: 500; /* Grosor de la fuente */
+    transition: all 0.5s ease; /* Efecto de transición suave */
+    margin:15px 0px 10px 0px; ;
+  }
+
+  .benefits-list ol li svg {
+      width: 10px;
+    }
+    
+    
+
+  .button-get-plan .svg-rocket {
+    margin-right: 10px;
+    width: .9rem;
+  }
+
+
+  /* Media query para pantallas de hasta 768px (ejemplo, ajusta según tus necesidades) */
+@media screen and (max-width: 768px) {
+  .benefits-list ul li {
+    color: rgb(251, 251, 251);
+    margin-right: 50px; /* Cambia el color del texto a azul */
+  }
+
+  .button-get-plan {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .button-get-plan a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0022ff;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: .8rem;
+    letter-spacing: .05rem;
+    font-weight: 500;
+    transition: all 0.5s ease;
+  }
+  
+  .button-get-plan a:hover {
+    transform: translateY(-3%);
+    box-shadow: 0 3px 10px rgba(207, 212, 222, 0.9);
+  }
+  
+  .button-get-plan .svg-rocket {
+    margin-right: 10px;
+    width: .9rem;
+    fill: currentColor;
+  }
+
+/* Media query para dispositivos móviles */
+}  
